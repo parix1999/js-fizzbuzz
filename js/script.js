@@ -7,15 +7,26 @@
 // e non procurano alcun resto lo dovrebbero essere.
 
 // variabile di stampa:
-
+var outPut = document.getElementById('result');
 
 // inizio conta
 
 
 var conto = 0;
 for (var x = 1; x <=100; x++) {
-    var somma = conto + x;
-    document.getElementById('result').innerHTML += "<br>" + somma;
+    conto + x; 
+    outPut.innerHTML += "<br>"+ x ;
+    
+    if (x % 3 === 0) {
+        outPut.innerHTML += 'Fizz' ;
+    
+    }else if (x % 5 === 0){
+        outPut.innerHTML += 'Buzz' ;
+    
+    }else if (x % 3 === 0 && x % 5 === 0){
+        outPut.innerHTML += 'FizzBuzz' ;
+    }
+
 }
 
 
