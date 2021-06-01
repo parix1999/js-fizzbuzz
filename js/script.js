@@ -17,14 +17,15 @@ for (var x = 1; x <=100; x++) {
     conto + x; 
     outPut.innerHTML += "<br>"+ x ;
     
-    if (x % 3 === 0) {
+    if (x % 3 === 0 && x % 5 === 0) {
+        outPut.innerHTML += 'FizzBuzz' ;
+      
+    }else if (x % 3 === 0) {
         outPut.innerHTML += 'Fizz' ;
     
     }else if (x % 5 === 0){
         outPut.innerHTML += 'Buzz' ;
     
-    }else if (x % 3 === 0 && x % 5 === 0){
-        outPut.innerHTML += 'FizzBuzz' ;
     }
 
 }
