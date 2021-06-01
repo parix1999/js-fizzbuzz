@@ -14,8 +14,8 @@ var outPut = document.getElementById('result');
 
 var conto = 0;
 for (var x = 1; x <=100; x++) {
-    conto + x; 
-    outPut.innerHTML += "<br>"+ x ;
+    parseInt(conto) + parseInt(x); 
+    outPut.innerHTML += "<br>"+ parseInt(x) ;
     
     if (x % 3 === 0 && x % 5 === 0) {
         outPut.innerHTML += 'FizzBuzz' ;
